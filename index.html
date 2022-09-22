@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <script src="https://kit.fontawesome.com/a0094d0aa6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <!-- 1 -->
+      <div class="profile">
+        <img class="img-fluid" src="profile.png" />
+      </div>
+      <!-- 2 -->
+      <div class ="main-content">
+        <h3 class="name">Smithan Kumar R</h3>
+        <h4 class="title"> Full Stack developer 💻 </h4>
+      </div>
+      <!-- 3 -->
+      <ul class="social">
+        <li><a href="https://github.com/SmithankumarR" class="fa fa-github"></a></li>
+        <li><a href="https://twitter.com/Smithankumarr" class="fa fa-twitter"></a></li>
+        <li><a href="https://www.instagram.com/i_am_smithan_kumar/" class="fa fa-instagram"></a></li>
+        <li><a href="https://medium.com/@smithankumar404" class="fa fa-medium"></a></li>
+      </ul>
+      <!-- 4 -->
+      <div class="skills">
+        <h6>Skills</h6>
+        <ul>
+          <li>Unix</li>
+          <li>Git</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SASS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Github</li>
+          <li>NodeJs</li>
+          <li>MongoDB</li>
+          <li>ExpressJs</li>
+        </ul>
+      </div>
+    </div>
+    <!-- js file -->
+    <script>
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
+        document.onkeydown = function (e) {
+            // disable F12 key
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // disable I key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // disable J key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                return false;
+            }
+
+            // disable U key
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        };
+    </script>
+  </body>
+</html>
